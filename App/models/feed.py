@@ -16,14 +16,15 @@ class Feed(db.Model):
         "5": 10
     }
 
+
     def toJSON(self):
         return {
             "last-refresh": self.last_refresh,
             "current-time": datetime.now()
         }
 
-    def refresh_views():
-        current_time = datetime().now
+    def refresh(self):
+        current_time = datetime.now()
         time_since_last_refresh = current_time - self.last_refresh
 
         if time_since_last_refresh.days >= 1:
