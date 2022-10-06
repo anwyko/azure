@@ -43,7 +43,7 @@ def pop():
     # print(refresh_views())
     # feed = generate_feed()
     # print(feed)
-    # print('database populated') 
+    print('database populated') 
     
 
 
