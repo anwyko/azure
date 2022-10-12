@@ -49,7 +49,7 @@ def create_app(config={}):
     app = Flask(__name__, static_url_path='/static')
     CORS(app)
     loadConfig(app, config)
-    app.config['JWT_EXPIRATION_DELTA'] =  timedelta(days=7)
+#     app.config['JWT_EXPIRATION_DELTA'] =  timedelta(days=7)
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['TEMPLATES_AUTO_RELOAD'] = True
     app.config['PREFERRED_URL_SCHEME'] = 'https'
